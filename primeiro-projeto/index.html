@@ -4,6 +4,7 @@
     <head>
         <title>Quizz para programadores</title>
         <meta name="description" content="Um quizz interativo para testar seus conhecimentos">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -127,7 +128,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="2">Boa Sorte na próxima</td>
+                            <td colspan="2">Boa Sorte na próxima! Estude mais para melhorar</td>
                         </tr>
                     </tfoot>
                 </table>
@@ -160,13 +161,14 @@
                         <label for="name">e-mail:</label>
                         <input type="text" id="name" name="name"><br><br>
                         <label for="comentarios">Comentários:</label><br>
-                        <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite os seus comentários"></textarea>
+                        <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite os seus comentários"></textarea><br>
+                        <button onclick="alert('Feedback Enviado!')">Envie o feedback</button>
                     </fieldset>
                 </form>
             </section>
         </main>
         <footer>
-           <p>&copy; Matheus Alexandre Santos. Todos os direitos reservados </p>
+           <p class="contato">&copy; Matheus Alexandre Santos. Todos os direitos reservados </p>
            <p><a href="https://linktr.ee/MatheusAlexandreSantos" target="_blank"> Entre em contato comigo! </a></p>
         </footer>
     </body>   
