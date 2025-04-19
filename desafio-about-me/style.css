@@ -12,13 +12,19 @@ body {
     font-family: "Kanit", sans-serif;
     font-weight: 200;
     font-style: normal;  
-    padding: 5rem;
+    padding: 1.2rem;
 }
 
 header {
     padding: 2rem;
     text-align: center;
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.8rem, 2.5vw, 2.3rem);
     white-space: nowrap;
 }
 
@@ -52,16 +58,16 @@ button {
     background-color: #fffffe;
     border: 2px solid #0c7e7e;
     border-radius: 30px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px #414949, 0 6px 20px #2d3837;
     cursor: pointer;
    
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     padding-left: 3rem; 
-    padding-right: 1rem;
+    padding-right: 3rem;
     text-align: center;
     overflow: hidden;
     transition: 0.3s;
