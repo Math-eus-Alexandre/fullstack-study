@@ -23,7 +23,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 15px;
     align-items: center;
 }
 
@@ -32,14 +32,18 @@ button {
     display: inline-block;
     height: 65px;
     width: 600px;
+    max-width: 100%;
     background-color:#fffffe;
     border: 2px solid #0c7e7e;
     padding: 1.1rem;
     cursor: pointer;
     border-radius: 30px;
     text-align: center;
-
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    opacity: 0.7;
+    transition: 0.3s;
 }
+button:hover {opacity: 1}
 
 img {
     width: 10rem;
@@ -60,5 +64,6 @@ button .img-icon{
 }
 
 footer {
+    padding-top: 5rem;
     text-align: center;
 }
