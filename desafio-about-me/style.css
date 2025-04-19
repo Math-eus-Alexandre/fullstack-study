@@ -18,30 +18,55 @@ body {
 header {
     padding: 2rem;
     text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    white-space: nowrap;
 }
 
 main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
     align-items: center;
 }
 
+.bloco-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 800px;
+}
+
 button {
-    position: relative;
-    display: inline-block;
+
+    width: 100%;
+    max-width: 800px;
+    min-width: 280px;
     height: 65px;
-    width: 600px;
-    max-width: 100%;
-    background-color:#fffffe;
+    background-color: #fffffe;
     border: 2px solid #0c7e7e;
-    padding: 1.1rem;
-    cursor: pointer;
     border-radius: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    cursor: pointer;
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    padding-left: 3rem; 
+    padding-right: 1rem;
     text-align: center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    opacity: 0.7;
+    overflow: hidden;
     transition: 0.3s;
+    opacity: 0.7;
+
 }
 button:hover {opacity: 1}
 
@@ -51,16 +76,14 @@ img {
     border-radius: 100px;
 }
 
-button .img-icon{
-    border-radius: 0%;
+button .img-icon {
+    position: absolute;
+    left: 1rem;
     width: 2rem;
     height: 2rem;
-    text-align: left;
-    position: absolute;
-    left: 17px;
-    top: 50%;
-    transform: translateY(-50%);
-      
+    pointer-events: none;
+    border-radius: 0;
+
 }
 
 footer {
